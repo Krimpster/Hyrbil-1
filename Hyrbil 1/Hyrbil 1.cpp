@@ -12,19 +12,19 @@ int main()
     SetConsoleOutputCP(1252);
     int dagar;
     int mil;
-    //Anger hu många dagar bilen blir hyrd//
-    cout << "Ange hur många dagar du tänker hyra bilen:";
+    //Anger hur många dagar bilen blir hyrd//
+    cout << "Ange hur många dagar bilen hyrs ut:";
     cin >> dagar;
     if (dagar <= 3) {
         //Anger hur många mil bilen har kört//
         cout << "Ange hur många mil bilen har gått:";
         cin >> mil;
         //Beräknar dagspriset + milpriset och matar ut det//
-        cout << "Ditt pris är " << dagar * 500 + mil * 2 << "kr";
+        cout << "Den totala summan blir " << dagar * 500 + mil * 2 << "kr";
     }
     else {
         //Beräknar dagspriset och matar ut det//
-        cout << "Ditt pris är " << dagar * 990 << "kr";
+        cout << "Den totala summan blir " << dagar * 990 << "kr";
     }
     cin.get();
     cin.get();
